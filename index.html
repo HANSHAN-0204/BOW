@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+    <title>保色科技首頁</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="static/front_page_PC.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="static/front_page_M.css">
+    <link rel="shortcut icon" href="http://www.bow.com.tw/images/bow.ico">
+
+    <script>
+
+        window.onscroll = function () {
+
+            scrollfunction()
+
+        }
+
+        function scrollfunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("back_to_top_button").style.display = "block";
+            }
+            else {
+                document.getElementById("back_to_top_button").style.display = "none";
+            }
+        }
+
+        function backToTopfunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        var count = 0;
+
+        function show_function() {
+            if (count == 0) {
+                document.getElementById("part").style.display = 'block';
+                count = 1;
+                document.getElementById("show").style.background = '#ffffff';
+                document.getElementById("show").style.color = '#109019';
+
+                document.addEventListener('click', handleClickOutside);
+            } else {
+                document.getElementById("part").style.display = 'none';
+                count = 0;
+                document.getElementById("show").style.background = 'none';
+                document.getElementById("show").style.color = '#ffffff';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+        function handleClickOutside(event) {
+            var part = document.getElementById("part");
+            var show = document.getElementById("show");
+
+            if (!part.contains(event.target) && !show.contains(event.target)) {
+                document.getElementById("part").style.display = 'none';
+                count = 0;
+                document.getElementById("show").style.background = 'none';
+                document.getElementById("show").style.color = '#ffffff';
+
+                document.removeEventListener('click', handleClickOutside);
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+            <p class="no_select_1">
+                <span class="first_word">B</span><span class="word">est</span> <span class="first_word">O</span><span
+                    class="word">f</span> <span class="first_word">W</span><span class="word">orld</span>
+            </p>
+            <a href="index.html">
+                <img class="bow_logo" src="images/BOW_logo.jpg" alt="bow">
+            </a>
+        </div>
+
+        <div id="title">
+            <p class="no_select_2">
+                <span class="title_first_word">保色</span><span class="title_word">科技</span>
+            </p>
+            <a href="http://www.bow.com.tw" target="_blank" class="bow">http://www.bow.com.tw</a>
+        </div>
+
+    </div>
+
+    <div id="navbar">
+
+        <button class="navbar_button" onclick="window.location.href='index.html'">首頁</button>
+        <button class="navbar_button" onclick="window.location.href='about_bow.html'">關於保色</button>
+        <button id="show" class="navbar_button_3" onclick="show_function()">品牌部門</button>
+        <button class="navbar_button_2" onclick="window.location.href='OBM.html'">品牌部門</button>
+        <button class="navbar_button_2" onclick="window.location.href='ODM.html'">ODM部門</button>
+        <button class="navbar_button_2" onclick="window.location.href='OEM.html'">OEM部門</button>
+        <button class="navbar_button" onclick="window.location.href='contact_us.html'">聯絡我們</button>
+        <button class="navbar_button" onclick="window.location.href='index_English.html'">English</button>
+
+        <div id="part" style="display: none;">
+            <button class="navbar_button_1" onclick="window.location.href='OBM.html'">品牌部門</button>
+            <button class="navbar_button_1" onclick="window.location.href='ODM.html'">ODM部門</button>
+            <button class="navbar_button_1" onclick="window.location.href='OEM.html'">OEM部門</button>
+        </div>
+
+    </div>
+
+    <div id="back_to_top">
+
+        <button id="back_to_top_button" onclick="backToTopfunction()">↑</button>
+
+    </div>
+
+    <div id="content">
+
+        <div id="solgan">
+
+            <p class="solgan_1">
+                <span class="solgan_green">保色</span><span class="solgan_red">科技</span>　<span
+                    class="solgan_purple">無限創意</span>
+            </p>
+
+        </div>
+
+        <div id="content_word_1">
+
+            <p class="content_title_1">您為我們的下一代盡力了嗎？</p>
+            <p class="content_content_1">
+                　　自從人類歷史以來，一直以萬物之靈自居，追求進步與發展，歷經數次的工業革命，將人類的生活層次推展到新的境界。然而各國政府在經濟掛帥的前提下，往往無法有效遏止廠商與百姓對能源的濫用，地球生活環境正快速惡化中；由於人類無法不使用能源而生存，因此能源的最有效利用已經成為地球上每一份子最刻不容緩的時代使命，盡量使用潔淨的能源與能源的最有效利用，是維護地球萬物永續生存的不二法門。
+                <br>
+                <br>
+                　　太陽能熱水器與熱泵熱水器的發展，都是環保先驅努力的成果，但是因為設置環境的限制，導致無法將資源與能源做最有效的利用，保色科技擷取瓦斯熱水器高效率的快速優點與環保熱水器的節能優點，開發出<a
+                    href="products_tayjyi.html" class="tem_5">太極真綠</a>熱水控流器，讓瓦斯與綠能這兩種能源的利用都能發揮到極致。
+            </p>
+
+        </div>
+
+        <div id="content_img_1">
+
+            <img src="images/love_earth.jpg" class="tem_1">
+
+        </div>
+
+        <div id="solgan">
+
+            <p class="solgan_2">
+                <span class="solgan_green_1">環保愛地球</span>　<span class="solgan_brown_1">讓我們將能源做最有效的利用</span>
+            </p>
+
+        </div>
+
+        <div id="content_word_2">
+
+            <a href="products_automnt.html" class="content_title_1">AUTOMNT-電池自動保養放電器-環保新尖兵</a>
+            <p class="content_content_2">
+                延長電池的壽命，降低浪費與污染
+                <br>
+                <br>
+                使用高效率電源及微電腦
+                <br>
+                一年耗能不到3度電
+                <br>
+                保障生命財產安全又環保
+            </p>
+
+        </div>
+
+        <div id="content_img_2">
+
+            <img src="images/automnt/automnt_a.jpg" class="tem_2">
+
+        </div>
+
+        <div id="content_word_3">
+
+            <a href="products_tayjyi.html" class="content_title_2">太極真綠</a>
+            <img src="images/tjmate/TJMATE_2.PNG" class="tem_3">
+            <p class="content_content_3">太極無限</p>
+            <a href="products_tjmate.html" class="content_title_3">
+                太極真綠遙控器
+            </a>
+
+        </div>
+
+        <div id="content_img_3">
+
+            <img src="images/tayjyi/太極真綠.jpg" class="tem_4">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

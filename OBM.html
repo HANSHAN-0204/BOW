@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+    <title>品牌部門</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="static/OBM.css">
+    <link rel="shortcut icon" href="http://www.bow.com.tw/images/bow.ico">
+
+    <script>
+
+        window.onscroll = function () {
+
+            scrollfunction()
+
+        }
+
+        function scrollfunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("back_to_top_button").style.display = "block";
+            }
+            else {
+                document.getElementById("back_to_top_button").style.display = "none";
+            }
+        }
+
+        function backToTopfunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+            <p class="no_select" style="margin-left: 1.2rem; margin-top: 1.5rem;">
+                <span class="first_word">B</span><span class="word">est</span> <span class="first_word">O</span><span
+                    class="word">f</span> <span class="first_word">W</span><span class="word">orld</span>
+            </p>
+            <a href="index.html">
+                <img class="bow_logo" src="images/BOW_logo.jpg" alt="bow">
+            </a>
+        </div>
+
+        <div id="title">
+            <p class="no_select" style="margin-left: 1rem; margin-top: 4.5rem;">
+                <span class="title_first_word">保色</span><span class="title_word">科技</span>
+            </p>
+            <a href="http://www.bow.com.tw" target="_blank" class="bow">http://www.bow.com.tw</a>
+        </div>
+
+    </div>
+
+    <div id="navbar">
+
+        <button class="navbar_button" onclick="window.location.href='index.html'">首頁</button>
+        <button class="navbar_button" onclick="window.location.href='about_bow.html'">關於保色</button>
+        <button class="navbar_button" style="background-color: #ffffff; color: #109019;">品牌部門</button>
+        <button class="navbar_button">ODM部門</button>
+        <button class="navbar_button">OEM部門</button>
+        <button class="navbar_button" onclick="window.location.href='contact_us.html'">聯絡我們</button>
+        <button class="navbar_button" onclick="window.location.href='OBM_English.html'">English</button>
+
+    </div>
+
+    <div id="back_to_top">
+
+        <button id="back_to_top_button" onclick="backToTopfunction()">↑</button>
+
+    </div>
+
+    <div id="content">
+
+
+        <div id="content_img_1" style="margin-top: 4.8rem;">
+            <a href="products_tayjyi.html">
+                <img src="images/BOW_logo.jpg" style="width: 10rem; margin-left: 15rem; object-fit: cover;">
+            </a>
+        </div>
+
+        <div id="content_word_1" style="margin-top: 4.8rem;">
+            <a href="products_tayjyi.html" style="text-decoration: none;">
+                <p class="solgan" style="margin-left: 2rem; margin-top: 6rem;">
+                    <span class="solgan_green">保色</span><span class="solgan_red">科技</span>　<span
+                        class="solgan_purple">無限創意</span>
+                </p>
+            </a>
+        </div>
+
+        <div id="content_img_2" style="margin-top: 4.8rem;">
+
+            <img src="images/TWRC_logo.jpg" style="width: 10rem; margin-left: 15rem; object-fit: cover;">
+
+        </div>
+
+        <div id="content_word_2" style="margin-top: 4.8rem;">
+
+            <p class="solgan" style="margin-left: 2rem; margin-top: 6rem;">
+                <span class="solgan_green">台灣</span><span class="solgan_red">遙控</span>　<span
+                    class="solgan_purple">精采生動</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

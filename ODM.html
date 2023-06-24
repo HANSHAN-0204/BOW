@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+    <title>ODM部門</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="static/ODM_page_PC.css">
+    <link rel="shortcut icon" href="http://www.bow.com.tw/images/bow.ico">
+
+    <script>
+
+        window.onscroll = function () {
+
+            scrollfunction()
+
+        }
+
+        function scrollfunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("back_to_top_button").style.display = "block";
+            }
+            else {
+                document.getElementById("back_to_top_button").style.display = "none";
+            }
+        }
+
+        function backToTopfunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+            <p class="no_select" style="margin-left: 1.2rem; margin-top: 1.5rem;">
+                <span class="first_word">B</span><span class="word">est</span> <span class="first_word">O</span><span
+                    class="word">f</span> <span class="first_word">W</span><span class="word">orld</span>
+            </p>
+            <a href="index.html">
+                <img class="bow_logo" src="images/BOW_logo.jpg" alt="bow">
+            </a>
+        </div>
+
+        <div id="title">
+            <p class="no_select" style="margin-left: 1rem; margin-top: 4.5rem;">
+                <span class="title_first_word">保色</span><span class="title_word">科技</span>
+            </p>
+            <a href="http://www.bow.com.tw" target="_blank" class="bow">http://www.bow.com.tw</a>
+        </div>
+
+    </div>
+
+    <div id="navbar">
+
+        <button class="navbar_button" onclick="window.location.href='index.html'">首頁</button>
+        <button class="navbar_button" onclick="window.location.href='about_bow.html'">關於保色</button>
+        <button class="navbar_button" onclick="window.location.href='OBM.html'">品牌部門</button>
+        <button class="navbar_button" style="background-color: #ffffff; color: #109019;">ODM部門</button>
+        <button class="navbar_button">OEM部門</button>
+        <button class="navbar_button" onclick="window.location.href='contact_us.html'">聯絡我們</button>
+        <button class="navbar_button" onclick="window.location.href='index_English.html'">English</button>
+
+    </div>
+
+    <div id="back_to_top">
+
+        <button id="back_to_top_button" onclick="backToTopfunction()">↑</button>
+
+    </div>
+
+    <div id="content">
+
+        <div id="solgan">
+
+            <p class="solgan" style="margin-top: 2.5rem;">
+                <span class="solgan_green">保色</span><span class="solgan_red">科技</span>　<span
+                    class="solgan_purple">無限創意</span>
+            </p>
+
+        </div>
+
+        <div id="content_img_1">
+
+            <p class="content_title" style="margin-left: 2.5rem; margin-top: 2.5rem;">專業設計</p>
+            <img src="images/bow/2003_1030_093731AA.gif" class="product">
+            <img src="images/bow/2003_1030_093758AA.gif" class="product">
+
+        </div>
+
+        <div id="content_word_1">
+
+            <p class="content_content">
+                各型充電器，電子變速器、遙控器、爆閃燈等等各類控制機板設計
+            </p>
+
+        </div>
+
+        <div id="content_img_1">
+
+            <p class="content_title" style="margin-left: 2.5rem; margin-top: 2.5rem;">代工服務</p>
+            <img src="images/bow/2003_1030_094411AA.gif" class="product">
+            <img src="images/bow/2003_1030_093847AA.gif" class="product">
+
+        </div>
+
+        <div id="content_word_1">
+
+            <p class="content_content">
+                SMT、DIP代工服務
+            </p>
+
+        </div>
+
+        <div id="content_img_1">
+
+            <p class="content_title" style="margin-left: 2.5rem; margin-top: 2.5rem;">品質管理</p>
+            <img src="images/bow/2003_1030_094806AA.JPG" class="product">
+            <img src="images/bow/2003_1030_094749AA.JPG" class="product">
+            
+        </div>
+
+        <div id="content_word_1">
+
+            <p class="content_content">
+                協助治具、檢測方式設計
+            </p>
+
+        </div>
+
+        <div id="content_img_1">
+
+            <p class="content_title" style="margin-left: 2.5rem; margin-top: 2.5rem;">全檢出貨</p>
+            <img src="images/bow/2003_1030_094806AA.gif" class="product">
+            <img src="images/bow/2003_1030_094400AA.gif" class="product">
+            
+
+        </div>
+
+        <div id="content_word_1">
+
+            <p class="content_content">
+                代工機板，治具全檢出貨
+            </p>
+
+        </div>
+
+        
+
+    </div>
+
+</body>
+
+</html>

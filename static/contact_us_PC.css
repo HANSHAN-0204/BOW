@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+
+html {
+    min-width: 1200px;
+    overflow-x: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*標投欄*/
+#header {
+    width: 70rem;
+    height: 8rem;
+    margin: 0 auto;
+    display: flex;
+    background-color: #ffffff;
+}
+/*禁止選取*/
+p.no_select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 0;
+}
+/*標語_紅*/
+span.first_word {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #d0101b;
+}
+/*標語_綠*/
+span.word {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #109019;
+}
+/*logo圖片*/
+img.bow_logo {
+    width: 6rem;
+    margin-left: 2.5rem;
+    margin-top: -0.1rem;
+    object-fit: cover;
+}
+/*公司名_紅*/
+span.title_first_word {
+    margin-left: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'cwTeXFangSong', serif;
+    color: #d0101b;
+}
+/*公司名_綠*/
+span.title_word {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'cwTeXFangSong', serif;
+    color: #109019;
+}
+/*網頁連結*/
+a.bow {
+    margin-left: 1.8rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #888888;
+}
+/*導航列*/
+#navbar {
+    width: 73rem;
+    height: 2.8rem;
+    margin: 0 auto;
+    border-radius: 1.4rem;
+    background-color: #109019;
+}
+/*導航列按鈕*/
+button.navbar_button {
+    width: 10rem;
+    height: 2.9rem;
+    margin-top: -0.1rem;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'cwTeXMing', serif;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#content {
+    width: 70rem;
+    margin: 0 auto;
+}
+
+p.content_title {
+    font-size: 1.7rem;
+    font-family: 'cwTeXMing', serif;
+    font-weight: bolder;
+    color: #073a0a;
+}
+
+p.content_content {
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    font-family: 'cwTeXMing', serif;
+    color: #111111;
+}
